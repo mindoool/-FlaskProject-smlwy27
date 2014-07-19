@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Minseok Kim	</title>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}"/>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}"/>
+	<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/stylesheet.css')}}"/>
+	<script type="text/javascript" src="{{url_for('static', filename='js/jquery-1.11.1.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/script.js')}}">
+	</script>
+
+</head>
+<body>
+	<!--페이스북 좋아요 기능을 위해 추가한 내용-->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=741810999213842&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	
+	<!--헤더, 홈페이지 윗부분을 담당함-->
+	<div id="header" class="container">
+		<!--로고 부분을 담당-->
+		<div id="logo">
+			smlwy
+		</div>
+		<!--간략한 개인 정보와 페이스북 좋아요 기능 추가-->
+		<div id="aboutme">
+			<div class="fb-like" data-href="https://smlwy27.appspot.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+			Minseok Kim | 010-6368-4578 | Kakao: smlwy369 | E-Mail: minseok.kim89@gmail.com
+		</div>
+		<!--사진 중 윗줄에 위치한 사진들-->
+		<div id="tp">
+			<img id="me" class="hi" alt="It's me!" src="https://scontent-a.xx.fbcdn.net/hphotos-xfp1/t1.0-9/992901_542631562462218_1515438197_n.jpg"/>
+			<img id="snu" class="hi" alt="SNU" src="http://img.etnews.co.kr/photonews/0809/080924051420_1495223223_b.jpg"/>
+			<img id="com2us" class="hi" alt="Com2uS" src="http://cfile27.uf.tistory.com/image/1607560C4B4D243401C00F"/>
+			<img id="abouttime" class="hi" alt="About Time" src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_article_large/public/2013/05/15/about-time-rachel-mcadams.PNG"/>
+			<img id="bnd" class="hi" alt="Being n Doing" src="https://dl.dropboxusercontent.com/u/24247548/img/bnd.png"/>			
+		</div>		
+	</div>
+	
+	<!--본문에서 왼쪽 메인 영역-->
+	<div id="body" class="container">
+		<div id="left">
+			<!--아무 것도 안할 때 나오는 내용-->
+			<div id="default">
+				<div id="economy">
+					<p class="insist"><b> - Korea's economy is in decline.</b></p>
+					<img class="economy" alt="nikkei" src="https://dl.dropboxusercontent.com/u/24247548/img/nikkei.png"/>
+					<img class="economy" alt="kospi" src="https://dl.dropboxusercontent.com/u/24247548/img/kospi.png"/>
+					<img class="economy" alt="won-dollar" src="https://dl.dropboxusercontent.com/u/24247548/img/won-dollar.png"/>
+					<img class="economy" alt="won-yen" src="https://dl.dropboxusercontent.com/u/24247548/img/won-yen.png"/>
+				</div>
+				<div id="company">
+					<p class="insist"><b> - To overcome this situation, we need to make more succesful company.</b></p>
+					<img class="company" alt="samsung" src="http://newsmon.net/wp-content/uploads/2013/10/4t3t13e.gif"/>
+					<img class="company" alt="hyundai" src="http://blog.donga.com/nakta79/files/2012/04/13.jpg"/>
+				</div>
+				<div id="bezos">
+					<p class="insist"><b> - We need som people who are full of enterpreneurship like Bezos.</b></p>
+					<div id="video">
+						<iframe width="720" height="540" src="//www.youtube.com/embed/YlgkfOr_GLY?rel=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<div id="quote">
+						- Jeff Bezos Quotes
+						<ul>
+							<li>On innovation: "I think frugality drives innovation, just like other constraints do. One of the only ways to get out of a tight box is to invent your way out."</li>
+							<li>On progress: "If you're competitor-focused, you have to wait until there is a competitor doing something. Being customer-focused allows you to be more pioneering."</li>
+							<li>On developing company culture: "Part of company culture is path-dependent—it's the lessons you learn along the way."</li>
+							<li>On new ideas: "There'll always be serendipity involved in discovery."</li>
+							<li>On haters: "If you never want to be criticized, for goodness' sake don't do anything new."</li>
+							<li>On motivation: "I strongly believe that missionaries make better products. They care more. For a missionary, it's not just about the business. There has to be a business, and the business has to make sense, but that's not why you do it. You do it because you have something meaningful that motivates you."</li>
+							<li>On choosing friends: "Life's too short to hang out with people who aren't resourceful."</li>
+							<li>On morals: "The one thing that offends me the most is when I walk by a bank and see ads trying to convince people to take out second mortgages on their home so they can go on vacation. That's approaching evil."</li>
+							<li>One strategy: "We've had three big ideas at Amazon that we've stuck with for 18 years, and they're the reason we're successful: Put the customer first. Invent. And be patient."</li>
+							<li>On growth: "All businesses need to be young forever. If your customer base ages with you, you're Woolworth's."</li>
+							<li>On pivoting: "If you're not stubborn, you'll give up on experiments too soon. And if you're not flexible, you'll pound your head against the wall and you won't see a different solution to a problem you're trying to solve."</li>
+							<li>On marketing: "In the old world, you devoted 30% of your time to building a great service and 70% of your time to shouting about it. In the new world, that inverts."</li>
+							<li>On pricing: "There are two kinds of companies, those that work to try to charge more and those that work to charge less. We will be the second."</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--minseok kim을 누르면 나오는 화면-->
+			<div id="minseokkim" class="content">
+				<!--사진-->
+				<div id="photo">
+					<p> Profile </p>
+					<img class="mi" alt="It's me!" src="https://scontent-a.xx.fbcdn.net/hphotos-xfp1/t1.0-9/992901_542631562462218_1515438197_n.jpg"/>
+					<img class="mi" alt="It's me too!" src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-frc3/t1.0-9/44694_108627332529312_6262908_n.jpg"/>
+					<img class="mi" alt="Me me me!" src="https://dl.dropboxusercontent.com/u/24247548/img/20140706_13390211.jpg"/>
+				</div>
+				<!--소개 내용-->
+				<div id="intro">
+					<div id="minseokkim-close" class="x"> X </div>
+					<br>
+					<ul>
+						<li>Name: Minseok Kim</li>
+						<li>Birth: 1989.02.22</li>
+						<li>Height: 179cm </li>
+						<li>Weight: 68kg </li>
+						<li>Address: Seoul Seocho-gu Banpo4-dong</li>
+						<li>Interests: Business/Economy </li>
+						<li>Job: PM, Com2uS</li>
+						<li>Slogan: For the better future, 'we', not just me or you, must do our best!</li>
+					</ul>
+				</div>
+			</div>
+
+			<!--Education메뉴 눌렀을 때 나오는 화면 -->
+			<div id="education" class="content">
+				<p style="font-size:30px"> &nbsp;&nbsp;&nbsp;Education </p>
+				<!--사진-->
+				<div id="highschool" class="education">
+					<img id="sehwa" class="mi" alt="Sehwa highschool" src="http://cfile236.uf.daum.net/image/123C7E194A64D33B26BA6E"/>
+					<ul>
+						<li>Name: Sehwa highschool </li>
+						<li>Location: Seoul Seocho-gu Banpo-dong</li>
+						<li>Admission: 2004.03</li>
+						<li>Graduate: 2007.02</li>
+					</ul>
+				</div>
+				<div id="university" class="education">
+					<img class="mi" alt="SNU" src="http://img.etnews.co.kr/photonews/0809/080924051420_1495223223_b.jpg"/>
+					<ul>
+						<li>Name: Seoul National University</li>
+						<li>Location: Seoul Gwanak-gu Bongcheon-dong</li>
+						<li>Admission: 2007.03</li>
+						<li>In university</li>
+					</ul>
+				</div>
+				<div id="education-close" class="x"> X </div>
+			</div>
+			
+			<!--Careers 메뉴 눌렀을 때 나오는 화면 -->
+			<div id="careers" class="content">
+				<p style="font-size:30px"> &nbsp;&nbsp;&nbsp;Careers </p>
+				<!--사진-->
+				<div id="bain" class="career">
+					<img class="careerlogo" alt="Bain n Company" src="http://upload.wikimedia.org/wikipedia/en/thumb/8/86/Bain_and_Company_Logo_1.svg/360px-Bain_and_Company_Logo_1.svg.png"/>
+					<ul>
+						<li>Name: Bain and Company Korea </li>
+						<li>Location: Seoul Jung-gu State-tower 24th Floor</li>
+						<li>Role: RA </li>
+						<li>Term: 2010.09~2011.02</li>
+					</ul>
+				</div>
+				<div id="modu" class="career">
+					<img class="careerlogo" alt="MODU" src="http://modumagazine.co.kr/wordpress/wp-content/uploads/2014/04/wplogo600x200-1.png"/>
+					<ul>
+						<li>Name: MODU </li>
+						<li>Location: Seoul Mapo-gu Sangsu-dong</li>
+						<li>Role: Marketing Director</li>
+						<li>Term: 2011.03~2011.08</li>
+					</ul>
+				</div>
+				<div id="o2line" class="career">
+					<img class="careerlogo" alt="O2Line" src="http://www.o2school.co.kr/o2line/images/logo.gif"/>
+					<ul>
+						<li>Name: O2Line </li>
+						<li>Location: Seoul Guro-gu Guro3-dong</li>
+						<li>Department: Marketing </li>
+						<li>Term: 2011.09~2012.09</li>
+					</ul>
+				</div>
+				<div id="com2us2" class="career">
+					<img class="careerlogo" alt="Com2uS" src="http://ir.com2us.com/kr/images/company/com2us.gif"/>
+					<ul>
+						<li>Name: Com2uS </li>
+						<li>Location: Seoul Geumcheon-gu Gasan-dong</li>
+						<li>Department: Publishing </li>
+						<li>Term: 2012.10~Present</li>
+					</ul>
+				</div>
+				<div id="career-close" class="x"> X </div>
+			</div>
+
+			<!--Likes메뉴 눌렀을 때 나오는 화면 -->
+			<div id="likes" class="content">
+				<p style="font-size:30px"> &nbsp;&nbsp;&nbsp;Likes </p>
+				<!--사진-->
+				<div id="abouttimecont" class="likes">
+					<img class="likesimg" alt="About Time" src="http://s1.ibtimes.com/sites/www.ibtimes.com/files/styles/v2_article_large/public/2013/05/15/about-time-rachel-mcadams.PNG"/>
+					<ul>
+						<li>Title: About Time </li>
+						<li>Cast: Rachel McAdams, Domhnall Gleeson, Bill Nighy</li>
+						<li>Running time: 124 min</li>
+						<li>Release: 2013.08.08</li>
+					</ul>
+				</div>
+				<div id="bigbang" class="likes">
+					<img class="likesimg" alt="Big Bang Theory" src="http://img4.wikia.nocookie.net/__cb20130814112358/bigbangtheory/images/b/b3/The-big-bang-theory-50b8bfdf40779_258612545cce82856235a769198966f5.png"/>
+					<ul>
+						<li>Title: Big Bang Theory</li>
+						<li>Cast: Jim Parsons, Johnny Galecki, Kaley Cuoco</li>
+						<li>First episode: 2007.09.24</li>
+						<li>Director: Chuck Lorre</li>
+					</ul>
+				</div>
+				<div id="likes-close" class="x"> X </div>
+			</div>
+			<!--Likes메뉴 눌렀을 때 나오는 화면 -->
+			<div id="now" class="content">
+				<p style="font-size:30px"> &nbsp;&nbsp;&nbsp;Now </p>
+				<!--사진-->
+				<div id="bndcont" class="now">
+					<img class="nowimg" alt="Being and Doing" src="https://dl.dropboxusercontent.com/u/24247548/img/bnd.png"/>
+					<ul>
+						<li>Name: Being and Doing </li>
+						<li>A meeting people share what they really want to be and what they are doing for it</li>
+						<li>First season: 2012.03</li>
+						<li>200+ people are enrolling</li>
+					</ul>
+				</div>
+				<div id="freestudy" class="now">
+					<img class="nowimg" alt="Free Study" src="https://dl.dropboxusercontent.com/u/24247548/img/freestudy.png"/>
+					<ul>
+						<li>Namee: Free Study</li>
+						<li>A meeting people study what thwy want to. </li>
+						<li>First season: 2014.03</li>
+						<li>10 people are enrolling</li>
+					</ul>
+				</div>
+				<div id="now-close" class="x"> X </div>
+			</div>
+		</div>
+
+		<div id="right">
+			<div id="menu">
+				<span id="menu1" class="menu"><b>minseok kim</b></span><br>
+				<span id="menu2" class="menu">Education</span><br>
+				<span id="menu3" class="menu"><b>Careers</b></span><br>
+				<span id="menu4" class="menu">Likes</span><br>
+				<span id="menu5" class="menu">Now</span><br>
+				<a href="{{url_for('koreaplan')}}" target="_blank"><span id="menu6" class="menu" style="color:red; font-size:30px;"><b>Idea Page</b></span></a><br><br><br>
+				<a href="#header"><span id="top" class="menu">Top</span></a>
+			</div>
+
+		</div>
+		<script type="text/javascript">
+		var $headline = $('#headline').hide();
+		
+		var $word1		= $('#arc-wrapper').find('h3').hide();
+		var $word2		= $('#arc-wrapper').find('h4').hide();
+
+		var $example1	= $('#example1').hide();
+		var $example2	= $('#example2').hide();
+		var $example3	= $('#example3').hide();
+		var $example4	= $('#example4').hide();
+
+		google.load('webfont','1');
+
+		google.setOnLoadCallback(function() {
+			WebFont.load({
+				google		: {
+					families	: ['Montserrat','Concert One']
+				},
+				fontactive	: function(fontFamily, fontDescription) {
+					init();
+				},
+				fontinactive	: function(fontFamily, fontDescription) {
+					init();
+				}
+			});
+		});
+
+		function init() {
+			
+			$headline.show().arctext({radius: 400});
+
+			$word1.show().arctext();
+			$word2.show().arctext({radius: 148, dir: -1});
+
+			$example1.show().arctext({radius: 300});
+			$example2.show().arctext({radius: 400, dir: -1});
+			$example3.show().arctext({radius: 500, rotate: false});
+			$example4.show().arctext({radius: 300});
+
+			$('#button_set').on('click', function() {
+				$example4.arctext('set', {
+					radius		: 140,
+					dir			: -1
+				});
+				return false;
+			});
+			$('#button_anim1').on('click', function() {
+				$example4.arctext('set', {
+					radius		: 300, 
+					dir			: -1,
+					animation	: {
+						speed	: 300,
+						easing  : 'ease-out'
+					}
+				});
+				return false;
+			});
+			$('#button_anim2').on('click', function() {
+				$example4.arctext('set', {
+					radius		: 200, 
+					dir			: 1, 
+					animation	: {
+						speed	: 300
+					}
+				});
+				return false;
+			});
+			$('#button_reset').on('click', function() {
+				$example4.arctext('set', {
+					radius		: 300, 
+					dir			: 1
+				});
+				return false;
+			});
+			
+		};
+		</script>
+	</div>
+	
+</body>
+</html>

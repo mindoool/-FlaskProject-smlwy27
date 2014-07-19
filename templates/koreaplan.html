@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="SlidesJS is a simple slideshow plugin for jQuery. Packed with a useful set of features to help novice and advanced developers alike create elegant and user-friendly slideshows.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Blueprint: On Scroll Effect Layout" />
+	<meta name="keywords" content="on scroll, effect, slide in, layout, template, transition, javascript" />
+	<meta name="author" content="Codrops" />
+	<meta name="author" content="Made with ❤ by Jorge Epuñan - @csslab">
+	<link type="text/css" rel="stylesheet" href="static/css/stylesheet-koreaplan.css"/>
+	<link rel="stylesheet" type="text/css" href="static/css/custom.css" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="static/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="static/css/component.css" />
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+	<link type="text/css" rel="stylesheet" href="static/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="static/css/style-horizon.css" media="screen" />
+	<script type='text/javascript' src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+	<script type='text/javascript' src="static/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" script src="static/js/jquery-1.11.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" script src="static/js/bootstrap.min.js"></script>
+	<script src="static/js/jquery.slides.min.js"></script>
+	<script src="static/js/modernizr.custom.js"></script>
+	<script src="static/js/classie.js"></script>
+	<script src="static/js/cbpScroller.js"></script>
+	<script src="static/js/jquery.timelinr-0.9.54.js"></script>
+	<script type="text/javascript" src="static/js/script-koreaplan.js"></script>
+	<script>
+	$(function(){
+		$().timelinr({
+			arrowKeys: 'true'
+		})
+	});
+	</script>
+	<style>
+	body {
+		-webkit-font-smoothing: antialiased;
+		font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #232525;
+	}
+
+	#slides {
+		display: none
+	}
+
+	#slides .slidesjs-navigation {
+		margin-top:3px;
+	}
+
+	#slides .slidesjs-previous {
+		margin-right: 5px;
+		float: left;
+	}
+
+	#slides .slidesjs-next {
+		margin-right: 5px;
+		float: left;
+	}
+
+	.slidesjs-pagination {
+		margin: 6px 0 0;
+		float: right;
+		list-style: none;
+	}
+
+	.slidesjs-pagination li {
+		float: left;
+		margin: 0 1px;
+	}
+
+	.slidesjs-pagination li a {
+		display: block;
+		width: 13px;
+		height: 0;
+		padding-top: 13px;
+		background-image: url(static/res/img/pagination.png);
+		background-position: 0 0;
+		float: left;
+		overflow: hidden;
+	}
+
+	.slidesjs-pagination li a.active,
+	.slidesjs-pagination li a:hover.active {
+		background-position: 0 -13px
+	}
+
+	.slidesjs-pagination li a:hover {
+		background-position: 0 -26px
+	}
+
+	#slides a:link,
+	#slides a:visited {
+		color: #333
+	}
+
+	#slides a:hover,
+	#slides a:active {
+		color: #9e2020
+	}
+
+	.navbar {
+		overflow: hidden
+	}
+	</style>
+	<!-- End SlidesJS Optional-->
+
+	<!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+	<style>
+	#slides {
+		display: none
+	}
+
+	.container {
+		margin: 0 auto
+	}
+
+	/* For tablets & smart phones */
+	@media (max-width: 767px) {
+		body {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.container {
+			width: auto
+		}
+	}
+
+	/* For smartphones */
+	@media (max-width: 480px) {
+		.container {
+			width: auto
+		}
+	}
+
+	/* For smaller displays like laptops */
+	@media (min-width: 768px) and (max-width: 979px) {
+		.container {
+			width: 724px
+		}
+	}
+
+	/* For larger displays */
+	@media (min-width: 1200px) {
+		.container {
+			width: 1170px
+		}
+	}
+	</style>
+	<title>
+		코리아 플랜
+	</title>	
+</head>
+<body data-spy="scroll" data-target=".navbar-example">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=670823289638445&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="header">
+		<div id="logo">
+			<img src="https://dl.dropboxusercontent.com/u/24247548/img/Korea%20Plan.png"/>
+			<div class="fb-like" data-href="https://korea-plan.appspot.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>	
+		</div>
+		<p id="slogan">For the SUPERIOR KOREA, We must do our best.</p> 
+		<img id="growth" src="http://blog.businessevolution.co/wp-content/uploads/2011/03/cs-growth-blocks22.png"/>
+	</div>
+	<div id="body">
+		<!--About Description-->
+		<div id="about">
+			<div class="page-header">
+				<h1>About <small> For us who dream better future</small></h1>
+				<div class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+						<span class="sr-only">20% Complete</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<a href="#readerstarget"><div id="readers" class="col-md-offset-1 col-md-6 well"><b>READERS</b></div></a>
+				<div id="explanation" class="col-md-offset-1 col-md-3 well">Mouse over menu <br> if you want to check it. </div>
+			</div>
+			<div class="row">
+				<a href="#beingndoingtarget"><div id="beingndoing" class="col-md-offset-1 col-md-3 well"><b>Being N Doing</b></div></a>
+				<a href="#freestudytarget"><div id="study" class="col-md-3 well"><b>Free Study</b></div></a>
+			</div>
+			<div id="cont1" class="content"> We have to read books for <b>10 reasons</b>.<br>
+				<ol class="contlist">
+					<li>To Develop Your Verbal Abilities </li>
+					<li>Improves Your Focus and Concentration</li>
+					<li>Readers Enjoy The Arts and Improve The World</li>
+					<li>It Improves Your Imagination</li>
+					<li>Reading Makes You Smarter</li>
+					<li>It Makes You Interesting And Attractive</li>
+					<li>It Reduces Stress</li>
+					<li>It Improves Your Memory</li>
+					<li>To Discover and Create Yourself</li>
+					<li>For Entertainment</li>
+				</ol>
+			</div>
+			<div id="cont2" class="content">
+				<b>The Great Books Program</b> is a curriculum that makes use of this list of texts. As much as possible, students rely on primary sources. The emphasis is on open discussion with limited guidance by a professor, facilitator, or tutor. Students are also expected to write papers.
+			</div>
+
+			<div id="cont3" class="content">
+				<b>KOREA PLAN RECRUITING</b><br>
+				<ul class="contlist">
+					<li> Why:</li>
+					<li>Who: </li>
+					<li>When: 2015.01.01-12.31 </li>
+					<li>Where: </li>
+					<li>What: Read The Great Book Program List </li>
+					<li>How: We will give you $1,000 every month if you read all books </li>
+					<li>Join us: </li>
+				</ul>
+			</div>
+		</div>
+		<div id="cbp-so-scroller" class="cbp-so-scroller">
+			<section class="cbp-so-section">
+				<article id="readerstarget" class="cbp-so-side cbp-so-side-left">
+					<h2>Readers</h2>
+					<p>"Readers" is a program which people read books together.</p>
+				</article>
+				<figure class="cbp-so-side cbp-so-side-right">
+					<div id="container2">
+						<div class="row">
+							<div id="readerscontainer" class="col-md-offset-1 col-md-10 well">						
+								<div id="table">
+									<table>
+										<thead>
+											<tr>
+												<th colspan="3"><div id="th"> The Great Books Program: List of Books </div></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><img id="b1" class= "book" src="http://tv02.search.naver.net/ugc?t=252x448&q=http://blogfiles.naver.net/20120719_55/seolae929_1342693553334Gc4S3_JPEG/0.jpg"/>
+												</td>
+												<td><img id="b2" class="book" src="http://tv01.search.naver.net/ugc?t=252x448&q=http://imgnews.naver.com/image/028/2009/08/14/6000291633_20090815.JPG"/></td>
+												<td><img id="b3" class="book" src="http://tv02.search.naver.net/ugc?t=252x448&q=http://blogfiles.naver.net/20110417_264/fydwjddbrwja_1303029930503WNX6g_JPEG/%BD%BA%C4%B5130.jpg"/></td>
+											</tr>
+											<tr>
+												<td>
+													<div id="comment1" class="comment">
+														<form name="checkListForm1" role="form">
+															<div class="form-group">
+																<label for="exampleInputEmail1">Apology of Socrates</label>
+																<input type="text" class="form-control" name="checkListItem1" placeholder="comment"/>
+															</div>
+														</form>
+														<button id="button1" type="submit" class="btn btn-default">Submit</button>
+														<br>
+														<div id="list1" class="list"></div>
+													</div>
+												</td>
+												<td>
+													<div id="comment2" class="comment">
+														<form name="checkListForm2" role="form">
+															<div class="form-group">
+																<label for="exampleInputEmail1">Politics</label>
+																<input type="text" class="form-control" name="checkListItem2" placeholder="comment"/>
+															</div>
+														</form>
+														<button id="button2" type="submit" class="btn btn-default">Submit</button>
+														<br>
+														<div id="list2" class="list"></div>
+													</div>
+												</td>
+												<td>
+													<div id="comment3" class="comment">
+														<form name="checkListForm3" role="form">
+															<div class="form-group">
+																<label for="exampleInputEmail1">Plutarch Lives</label>
+																<input type="text" class="form-control" name="checkListItem3" placeholder="comment"/>
+															</div>
+														</form>
+														<button id="button3" type="submit" class="btn btn-default">Submit</button>
+														<br>
+														<div id="list3" class="list"></div>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</section>
+			<section class="cbp-so-section">
+				<article id="beingndoingtarget" class="cbp-so-side cbp-so-side-right">
+					<h2>Being N Doing</h2>
+					<p>"Being N Doing" is a program people do what they want to be and share them.</p>
+				</article>
+				<figure class="cbp-so-side cbp-so-side-left">
+					<div id="container3">
+						<div class="row" class="rowbottom">
+							<div id="beingndoingcontainer" class="col-md-offset-1 col-md-10 well">
+								<div id="beingndoingcontent">
+									<img class="contentimg" alt="Bein N Doing" src="http://beingndoingdotcom.files.wordpress.com/2014/02/cropped-eb8ba4ec9ab4eba19ceb939c2.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</section>
+			<section class="cbp-so-section">
+				<article id="freestudytarget" class="cbp-so-side cbp-so-side-left">
+					<h2>Free Study</h2>
+					<p>"Free study" is a program people come together and study for themselves.</p>
+				</article>
+				<figure class="cbp-so-side cbp-so-side-right">
+					<div id="container4">
+						<div class="row" class="rowbottom">
+							<div id="studycontainer" class="col-md-offset-1 col-md-10 well">
+								<div id="studycontent">
+									<img class="contentimg" alt="Free Study" src="http://cfile9.uf.tistory.com/image/176F7A4E4EF043E015D1C0"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</figure>
+			</section>
+		</div>
+
+		<!--Video-->
+		<div id="video">
+			<iframe width="640" height="480" src="//www.youtube.com/embed/ZAQ4X2BYFnA?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+		</div>	
+
+
+
+		<!--Members-->
+		<div id="members">
+			<div class="page-header">
+				<h1>Members <small> People who are really enthusiastic</small></h1>
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+						<span class="sr-only">40% Complete (success)</span>
+					</div>
+				</div>
+			</div>				
+			<div class="row">
+				<div class="col-sm-6 col-md-4">
+					<div class="thumbnail">
+						<img data-src="https://dl.dropboxusercontent.com/u/24247548/img/20140706_13390211.jpg" alt="Minseok Kim"/>
+						<div class="caption">
+							<h3>Minseok Kim</h3>
+							<p>Hello. This is me</p>
+							<p><a href="http://www.facebook.com" class="btn btn-primary" role="button">Facebook</a> <a href="#" class="btn btn-default" role="button">e-mail</a></p>
+						</div>
+					</div>
+				</div>
+				
+
+				
+			</div>
+		</div>
+		<!--ideas-->
+		<div id="schedule">
+			<div class="page-header">
+				<h1>Schedule <small> schedule for each program </small></h1>
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+						<span class="sr-only">60% Complete (warning)</span>
+					</div>
+				</div>
+			</div>
+			<div id="timeline">
+				<ul id="dates">
+					<li><a class="time" href="#1900">2012.03</a></li>
+					<li><a class="time" href="#1930">2012.09</a></li>
+					<li><a class="time" href="#1944">2013.03</a></li>
+					<li><a class="time" href="#1950">2013.09</a></li>
+					<li><a class="time" href="#1971">2014.03</a></li>					
+				</ul>
+				<ul id="issues">
+					<li id="1900">
+						<img src="static/res/img/timeline1.png" width="256" height="256" />
+						<h1>2012.03~2012.06</h1>
+						<p>Being N Doing season1 was started. It had just 12members.</p>
+					</li>
+					<li id="1930">
+						<img src="static/res/img/timeline2.png" width="256" height="256" />
+						<h1>2012.09~2012.12</h1>
+						<p>Being N Doing season2 was started. It had 16members!(growing)</p>
+					</li>
+					<li id="1944">
+						<img src="static/res/img/timeline3.png" width="256" height="256" />
+						<h1>2013.03~2013.06</h1>
+						<p>Being N Doing season3 was started. It had 18members.(little growing)</p>
+					</li>
+					<li id="1950">
+						<img src="static/res/img/timeline4.png" width="256" height="256" />
+						<h1>2013.09~2013.12</h1>
+						<p>Being N Doing season4 was started. It had 22members.(still growing)</p>
+						<p>Readers season2 was started. It had 10 members.</p>
+					</li>
+					<li id="1971">
+						<img src="static/res/img/timeline5.png" width="256" height="256" />
+						<h1>2014.03~06</h1>
+						<p>Being N Doing season5 was started. It had 30members.(still growing)</p>
+						<p>Readers season2 was started. It had 12 members.(little growing)</p>
+					</li>
+				</ul>
+				<div id="grad_left"></div>
+				<div id="grad_right"></div>
+				<a href="#" id="next">+</a>
+				<a href="#" id="prev">-</a>
+			</div>
+		</div>
+
+		<div id="contactus">
+			<div class="page-header">
+				<h1>Contact Us <small> phone / location / etc.. </small></h1>
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+						<span class="sr-only">80% Complete (danger)</span>
+					</div>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+								<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								HaHaHA
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="container">
+				<div id="slides">
+					<img src="static/res/img/example-slide-1.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+					<img src="static/res/img/example-slide-2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+					<img src="static/res/img/example-slide-3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+					<img src="static/res/img/example-slide-4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+					<a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+					<a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+				</div>
+			</div>
+
+
+		</div>
+		<div id="right">
+			
+			<div>
+				http://www.hdwallpics.com/wp-content/uploads/2014/04/yellow-and-black-wallpaper-2.jpg
+			</div>
+			<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-example">
+						<ul id="menu" class="nav nav-pills" role="tablist">
+							<li><a href="#about">About</a></li>
+							<li><a href="#members">Members</a></li>
+							<li><a href="#schedule">Schedule</a></li>
+							<li><a href="#contactus">Contact us</a></li>
+							<li><a href="#logo">Top</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<script>
+		$(function() {
+			$('#slides').slidesjs({
+				width: 940,
+				height: 528,
+				navigation: false
+			});
+		});
+		</script>
+		<script>
+		new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+		</script>
+		<div class="footer"></div>
+	</body>
+	</html>

@@ -1,0 +1,298 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono);
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Yanone Kaffeesatz';
+	-webkit-font-smoothing: antialiased;
+}
+
+#header {
+	height: 140px;
+	width: 100%;
+	border-bottom: 1px solid black;	
+	background: url("http://media02.hongkiat.com/black-white-animal-photography/black-white-animal.jpg") right no-repeat;
+	background-color: black;
+	color: white;	
+}
+
+#logo {
+	font-size: 80px;
+	margin-top: 10px;
+	margin-left: 20px;
+	float: left;
+	font-family: 'Ubuntu Mono';
+}
+
+#aboutme {
+	float: left;
+	width: 38%;
+	margin-top: 80px;
+	margin-left: 50px;
+	font-size: 15px;
+}
+
+#tp {
+	float: right;
+	width: 40%;
+	height: 30px;
+	margin-top: 40px;
+}
+
+.hi {
+	width: 70px;
+	height: 70px;
+	margin: 10px 10px 0px 10px;
+	display: inline-block;
+	border-radius: 100%;
+	opacity: 0.5;
+}
+
+
+#com2us {
+	border: 1px solid
+}
+
+#body {
+	width: 100%;
+	background: url("http://buffuptherec.com/wp-content/uploads/2014/06/black-white-music-wallpaper-abstract-images-white-wallpaper.jpg") left fixed no-repeat;
+	background-size: 85%;
+}
+
+#left {
+	float: left;
+	width: 75%;
+	margin-top: 30px;
+	margin-left: 10px;
+	background-color: rgba(255,255,255,0.7);
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+#default {
+	clear: both;
+	font-size: 30px;
+	width: 100%;
+	background-size: 85%;
+	position: relative;
+}
+
+.economy {
+	display: inline-block;
+	border: 1px solid gray;
+	border-radius: 10px;
+	width: 35%;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+#company {
+	margin-top: 100px;
+}
+
+.company {
+	width: 40%;
+	border: 1px solid gray;
+	border-radius: 10px;
+	margin-left: 10px
+}
+
+#bezos {
+	margin-top: 100px;
+}
+
+#video {
+	margin-left: 10px;
+}
+
+#quote {
+	font-size: 15px;
+}
+
+#minseokkim {
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 10px;
+	width: 100%;
+	padding-bottom: 37%;
+	position: relative;
+	top: -1810px;
+	padding-right: 20px;
+	margin-left: 100px;
+}
+
+.mi {
+	width:200px;
+	display: inline-block;
+	margin-right: 5px;
+	border-radius: 10px;
+}
+
+#photo {
+	float: left;
+	width: 60%;
+	margin-left: 20px;
+	display: inline-block;
+	width: 630px;
+	color: white;
+	font-size: 30px;
+}
+
+#intro {
+	float: right;
+	width: 25%;
+	font-size: 18px;
+	display: inline-block;
+	margin-top: 23px;
+	margin-right: 12px;
+	color: white;
+}
+
+.x {
+	float: right;
+	border-radius: 100%;
+	width: 28px;
+	height: 28px;
+	border: 1px solid white;
+	color: white;
+	font-family: 'Roboto';
+	text-align: center;
+}
+
+#education {
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 10px;
+	width: 100%;
+	position: relative;
+	top: -1770px;
+	padding-right: 20px;
+	color: white;
+	margin-left: 100px;
+}
+
+.education {
+	display: inline-block;
+}
+
+#sehwa {
+	margin-left: 20px;
+}
+
+#university {
+	margin-left: 30px;
+}
+
+#education-close {
+	margin-top: -35px;
+	font-size: 18px;
+}
+
+
+#careers {
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 10px;
+	width: 100%;
+	position: relative;
+	top: -1730px;
+	padding-right: 20px;
+	color: white;
+	margin-left: 100px;
+}
+
+.career {
+	display: inline-block;
+}
+
+.careerlogo {
+	margin-left: 20px;
+	width:190px;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+#career-close {
+	margin-top: -250px;
+	font-size: 18px;
+}
+
+#likes {
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 10px;
+	width: 100%;
+	position: relative;
+	top: -1690px;
+	padding-right: 20px;
+	color: white;
+	margin-left: 100px;
+}
+
+.likes {
+	display: inline-block;
+}
+
+.likesimg {
+	margin-left: 20px;
+	width:190px;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+#likes-close {
+	margin-top: -40px;
+	font-size: 18px;
+}
+
+#now {
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 10px;
+	width: 100%;
+	position: relative;
+	top: -1650px;
+	padding-right: 20px;
+	color: white;
+	margin-left: 100px;
+}
+
+.now {
+	display: inline-block;
+}
+
+.nowimg {
+	margin-left: 20px;
+	width:190px;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+#now-close {
+	margin-top: -40px;
+	font-size: 18px;
+}
+
+
+#right {
+	float: right;
+	width: 20%;
+	margin-top: 60px;
+}
+
+a {
+	color: orange;
+}
+
+#menu {
+	font-size: 25px;
+	margin-left: 70px;
+	line-height: 40px;
+}
+
+.menu:hover {
+	color: orange;
+}
+
+#top {
+	position: fixed;
+}
