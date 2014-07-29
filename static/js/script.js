@@ -191,4 +191,48 @@ $(document).ready(function(){
 	$(document).on('click','.item', function(){
 		$(this).remove();
 	});
+
+
+
+	$('#keyword_cont').on('keydown', function(e){
+    	if(e.which==13) {
+    		e.preventDefault();
+			$('#search').click();
+		}
+  	});
+
+
+  	// $('form').submit(function(){
+
+  	// 	return false;
+  	// });
+
+
+	$('#search').click(function(){
+		var keyword=$('#keyword_cont').val();
+		$.ajax({
+			url: '/twittersearch',
+			type:'POST',
+			data:{"keyword":keyword},
+			success:function(response){
+				$('#result').empty()
+				var result = $.parseJSON(response);
+				var content = "<table>"
+				for(i=0;i<result.length;i++) {
+					content +='<tr><td>'+result[i]['name']+'</td>'
+					content +='<td>'+result[i]['text']+'</td></tr>'
+				}
+				content += "</table>"
+				$('#result').append(content)
+				console.log('success');
+			},
+			error: function(){
+				console.log('error');
+			},
+			complete:function(){
+				console.log('complete');
+			}
+		});
+		$('#keyword_cont').val("");
+	});
 });
